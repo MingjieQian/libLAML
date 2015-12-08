@@ -1010,10 +1010,13 @@ Matrix& exp(Matrix& A) {
 	double* resRow = null;
 
 	if (typeid(A) == typeid(DenseMatrix)) {
+		double** data = ((DenseMatrix&) A).getData();
+		double* row = null;
 		for (int i = 0; i < M; i++) {
 			resRow = resData[i];
+			row = data[i];
 			for (int j = 0; j < N; j++) {
-				resRow[j] = exp(resRow[j]);
+				resRow[j] = exp(row[j]);
 			}
 		}
 	} else {
