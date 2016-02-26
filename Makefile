@@ -2,6 +2,8 @@ CXX = 		g++ -std=c++0x
 
 CXXFLAGS =	-O2 -g -Wall -fmessage-length=0
 
+LDFLAGS = 	-shared  # linking flags
+
 SRCDIR	=	src
 
 INCDIR	=	include
@@ -148,9 +150,11 @@ ALLTEST	=	LAMLTest MatrixTest VectorTest LUTest QRTest SVDTest EVDTest IOTest Da
 			RPCATest MCTest CRFTest
 
 TARGET 	=	libLAML.a
+SHALIB	=	libLAML.so
 
 all:	$(ALLOBJS)
 	ar rcs $(TARGET) $(ALLOBJS)
+	$(CXX) $(LDFLAGS) -o $(SHALIB) $^
 	
 AllTest:	$(ALLTEST)
 
