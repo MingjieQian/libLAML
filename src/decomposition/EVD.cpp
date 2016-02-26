@@ -490,7 +490,7 @@ void EVD::implicitSymmetricShiftedQR(double* s, double* e,
 			r = g;
 			/*sn = g > 0 ? 1 : -1;
 					r = g > 0 ? g : -g;*/
-		} else if (abs(f) > abs(g)) {
+		} else if (fabs(f) > fabs(g)) {
 			t = g / f;
 			tt = sqrt(1 + t * t);
 			/*if (f < 0) {

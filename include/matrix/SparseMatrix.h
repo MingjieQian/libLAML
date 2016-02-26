@@ -33,7 +33,18 @@ private:
 
 public:
 
-	SparseMatrix() {M = 0; N = 0; nzmax = 0; nnz = 0;};
+	SparseMatrix() {
+		M = 0;
+		N = 0;
+		nzmax = 0;
+		nnz = 0;
+		ir = NULL;
+		jc = NULL;
+		ic = NULL;
+		jr = NULL;
+		valCSRIndices = NULL;
+		pr = NULL;
+	};
 
 	/**
 	 * Constructor for an M x N sparse matrix.

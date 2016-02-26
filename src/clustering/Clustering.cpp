@@ -7,12 +7,15 @@
 
 #include "Clustering.h"
 #include <ctime>
+#include <vector>
 
 /**
  * Default constructor for this clustering algorithm.
  */
 Clustering::Clustering() {
 	this->nClus = 0;
+	nExample = 0;
+	nFeature = 0;
 	dataMatrix = null;
 	centers = null;
 	indicatorMatrix = null;
@@ -33,6 +36,8 @@ Clustering::~Clustering() {
  */
 Clustering::Clustering(ClusteringOptions& clusteringOptions) {
 	this->nClus = clusteringOptions.nClus;
+	nExample = 0;
+	nFeature = 0;
 	dataMatrix = null;
 	centers = null;
 	indicatorMatrix = null;
@@ -51,6 +56,8 @@ Clustering::Clustering(int nClus) {
 		exit(1);
 	}
 	this->nClus = nClus;
+	nExample = 0;
+	nFeature = 0;
 	dataMatrix = null;
 	centers = null;
 	indicatorMatrix = null;

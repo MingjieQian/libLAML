@@ -585,7 +585,7 @@ void SVD::implicitZeroShiftQR(double* s, double* e, double** Ut, double** Vt, in
 			cs = 0;
 			sn = 1;
 			r = g;
-		} else if (abs(f) > abs(g)) {
+		} else if (fabs(f) > fabs(g)) {
 			t = g / f;
 			tt = sqrt(1 + t * t);
 			/*if (f < 0) {
@@ -626,7 +626,7 @@ void SVD::implicitZeroShiftQR(double* s, double* e, double** Ut, double** Vt, in
 			cs = 0;
 			sn = 1;
 			r = g;
-		} else if (abs(f) > abs(g)) {
+		} else if (fabs(f) > fabs(g)) {
 			t = g / f;
 			tt = sqrt(1 + t * t);
 			/*if (f < 0) {

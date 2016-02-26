@@ -15,6 +15,7 @@
 #include "DenseMatrix.h"
 #include "SparseMatrix.h"
 #include <string>
+#include <cmath>
 
 /*
 #ifndef EPS
