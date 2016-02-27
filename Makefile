@@ -294,5 +294,6 @@ clean:
 	-rm -f $(ALLOBJS)
 	-rm -rf $(OBJDIR)
 	-rm -f $(TARGET)
+	-rm -f $(SHALIB)
 	-rm -f $(EXEDIR)/*.exe
 	-rm -rf $(EXEDIR)
