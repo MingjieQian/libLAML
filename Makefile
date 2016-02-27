@@ -295,3 +295,4 @@ clean:
 	-rm -rf $(OBJDIR)
 	-rm -f $(TARGET)
 	-rm -f $(EXEDIR)/*.exe
+	-rm -rf $(EXEDIR)
