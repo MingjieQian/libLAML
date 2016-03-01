@@ -20,6 +20,11 @@ Classifier::Classifier() {
 	nExample = 0;
 	X = null;
 	W = null;
+	Y = NULL;
+	b = NULL;
+	labels = NULL;
+	IDLabelMap = NULL;
+	labelIDs = NULL;
 	epsilon = 1e-4;
 }
 
@@ -30,6 +35,7 @@ Classifier::~Classifier() {
 	delete b;
 	delete[] labels;
 	delete[] IDLabelMap;
+	delete[] labelIDs;
 }
 
 void Classifier::feedData(Matrix& X) {
