@@ -1,14 +1,12 @@
 libLAML
 
-libLAML (Linear Algebra and Machine Learning) is a stand-alone pure C++ library for linear algebra and machine learning. The goal is to build efficient and easy-to-use linear algebra and machine learning libraries. libLAML allows full control of the basic data structures for matrices and vectors, which is required to have fast implementation for machine learning methods. Additionally, libLAML provides a lot of commonly used matrix functions in the same signature to MATLAB, thus can also be used to manually convert MATLAB code to C++ code.
+libLAML (Linear Algebra and Machine Learning) is a stand-alone pure C++ library for linear algebra and machine learning. libLAML can be compiled on MinGW, Linux, and Mac OS X. The goal is to build efficient and easy-to-use linear algebra and machine learning libraries. libLAML allows full control of the basic data structures for matrices and vectors, which is required to have fast implementation for machine learning methods. Additionally, libLAML provides a lot of commonly used matrix functions in the same signature to MATLAB, thus can also be used to manually convert MATLAB code to C++ code.
 
 The built-in linear algebra library supports well-designed dense or sparse matrices and vectors. Standard compressed sparse column (CSC) and compressed sparse row (CSR) are used to design and implement sparse matrices. Unlike other linear algebra libraries in C++, the built-in linear algebra library in libLAML gives users full control of sparse matrices and vectors (e.g., the interior arrays in sparse matrices), which is crucial to make efficient high level implementations.
 
 libLAML v.s. LAML
 
 libLAML is at least 4 times faster than LAML, though I merely convert LAML in Java to libLAML in C++. I believe the only reason is programming language. There is an inevitable trade-off between cross-platform property and high efficiency.
-
-The cross-platform property is amazing for software developers, but as a cost its relatively low efficiency let down application users. From the perspective of users, high speed and good experience is more important. Users don't care whether the code is cross-platform or not.
 
 For runtime performance, I guess C++ is better than Java. Actually, it won't take so much time to manually convert Java code to C++ code.
 
