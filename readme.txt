@@ -6,9 +6,7 @@ The built-in linear algebra library supports well-designed dense or sparse matri
 
 libLAML v.s. LAML
 
-libLAML is at least 4 times faster than LAML, though I merely convert LAML in Java to libLAML in C++. I believe the only reason is programming language. There is an inevitable trade-off between cross-platform property and high efficiency.
-
-For runtime performance, I guess C++ is better than Java. Actually, it won't take so much time to manually convert Java code to C++ code.
+libLAML is at least 4 times faster than LAML, though I merely convert LAML in Java to libLAML in C++. I believe the only reason is programming language. For runtime performance, I guess C++ is better than Java. Actually, it won't take so much time to manually convert Java code to C++ code.
 
 Features:
 Stand-alone C++ static library
