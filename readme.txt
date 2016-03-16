@@ -9,7 +9,7 @@ libLAML v.s. LAML
 libLAML is at least 4 times faster than LAML, though I merely convert LAML in Java to libLAML in C++. I believe the only reason is programming language. For runtime performance, I guess C++ is better than Java. Actually, it won't take so much time to manually convert Java code to C++ code.
 
 Features:
-Stand-alone C++ static library
+Stand-alone C++ library
 Built-in Linear Algebra (LA) library
 Full control of matrices and vectors
 Fast implementation of Machine Learning (ML) methods
